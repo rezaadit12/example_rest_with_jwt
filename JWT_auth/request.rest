@@ -1,0 +1,29 @@
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJyZXphIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE3MTk0NTEyOTYsImV4cCI6MTcxOTQ1MTMxNn0.6rPWQ9YPJBrRngQ5ogsY05YbfheWgHf9jvjArTncvQs
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "name": "reza",
+    "email": "email@gmail.com",
+    "password": "1234",
+    "confPassword": "1234s"
+}   
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "1234"
+}   
+
+
+###
+GET http://localhost:4000/token
+
+###
+DELETE http://localhost:4000/logout

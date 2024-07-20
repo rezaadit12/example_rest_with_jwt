@@ -1,0 +1,19 @@
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+  "email" : "rezaadit@gmail.we",
+  "password" : "adsf"
+}
+
+
+###
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImVtYWlsIjoicmV6YWFkaXRAZ21haWwud2UiLCJpYXQiOjE3MTk1MzQ2MTEsImV4cCI6MTcxOTUzNDYzMX0.xSiznot5faqBKrfLVdNDn_5gAr87Jh0CWYjVZ7NFEEY
+
+
+###
+GET http://localhost:4000/auth/token
+
+###
+GET http://localhost:4000/auth/logout
